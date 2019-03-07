@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "name": "timestamp",
+    "encodeType": "delta",
+    "columnType": "UNSIGNED_LONG",
+    "structType": "required"
+  },
+  {
+    "id": 2,
+    "name": "latitude",
+    "encodeType": "delta_prefix_int",
+    "columnType": "GPS_LL",
+    "structType": "required"
+  },
+  {
+    "id": 3,
+    "name": "longitude",
+    "encodeType": "delta_prefix_int",
+    "columnType": "GPS_LL",
+    "structType": "required"
+  },
+  {
+    "id": 4,
+    "name": "speed",
+    "encodeType": "speed_encoding",
+    "columnType": "GPS_SPEED",
+    "structType": "optional"
+  },
+  {
+    "id": 5,
+    "name": "bearing",
+    "encodeType": "bearing_encoding",
+    "columnType": "GPS_BEARING",
+    "structType": "optional"
+  },
+  {
+    "id": 6,
+    "name": "horizontal_accuracy",
+    "encodeType": "rle",
+    "columnType": "UNSIGNED_INT",
+    "structType": "required"
+  },
+  {
+    "id": 7,
+    "name": "altitude",
+    "encodeType": "rle",
+    "columnType": "UNSIGNED_INT",
+    "structType": "optional"
+  },
+  {
+    "id": 8,
+    "name": "vertical_accuracy",
+    "encodeType": "rle",
+    "columnType": "UNSIGNED_INT",
+    "structType": "optional"
+  },
+  {
+    "id": 9,
+    "name": "satellite_count",
+    "encodeType": "rle",
+    "columnType": "UNSIGNED_INT",
+    "structType": "optional"
+  },
+  {
+    "id": 10,
+    "name": "is_wifi",
+    "encodeType": "rle",
+    "columnType": "BOOL",
+    "structType": "required"
+  },
+  {
+    "id": 11,
+    "name": "tag",
+    "encodeType": "rle",
+    "columnType": "UNSIGNED_INT",
+    "structType": "required"
+  }
+]
